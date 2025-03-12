@@ -489,7 +489,7 @@ img {
     padding: 8px 20px;
     border-radius: 21px;
     border: none;
-    background-color: #E2E6E9;
+    background-color: rgb(204, 232, 243);
     font-family: var(--socondry-font);
     font-size: 20px;
     font-weight: 400;
@@ -512,7 +512,6 @@ img {
 
 .profileSecurity .update-row button{
     width: 100%;
-    height: 40px;
     padding: 10px;
     border-radius: 21px;
     border: none;

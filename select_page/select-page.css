@@ -29,10 +29,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* transition: all 0.5s ease-in-out; */
 }
 body{
-    background: linear-gradient(50deg , rgb(16, 147, 203), rgb(16, 147, 203, 0.5));
+    background: linear-gradient(50deg , rgba(16, 147, 203), rgba(16, 147, 203, 0.5));
     height: 100vh;
     width: auto;
     display: flex;
@@ -42,18 +41,18 @@ body{
 }
 /* container 1 */
 .container1{
-    display: flex;
-    flex-direction: column;
+    background: linear-gradient(205deg, rgb(60, 96, 195) , rgb(60, 96, 195, 0));
+    border-radius: 50px;
     width: 520px;
     height: 550px;
-    border-radius: 50px;
-    background-image: linear-gradient(205deg, rgb(60, 96, 195) , rgb(60, 96, 195, 0));
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    display: block;
     cursor: pointer;
+    transition: background 0.5s ease-in-out;
 }
 .container1:hover{
-    background: linear-gradient(210deg, rgb(60, 96, 195), rgba(60, 96, 195, 0.5));
+    background: rgba(60, 96, 195, 0.8);
 }
 .offline-image{
     margin-top: -250px;
@@ -83,19 +82,6 @@ p{
     width: 30px;
     opacity: 0%;
 }
-.bg-image{
-    position: relative;
-    opacity: 0%;
-    margin-top: -100px;
-    right: 310px;
-    transform: rotate(-25deg);
-    transition: transform 0.8s ease-in-out;
-}
-.container1:hover .bg-image{
-    opacity: 5%;
-    transform: translateX(250px);
-}
-/* image-online animation */
 @keyframes bounce{
     0% { transform: translateY(0px); }
     30% { transform: translateY(-10px); }
@@ -106,9 +92,7 @@ p{
 .container1:hover .offline-image{
     animation: bounce 3s ease-in-out infinite; 
 }
-/* image-online animation */
 
-/* ball */
 
 @keyframes bounce_b{
     0% { transform: translateX(0px); }
@@ -123,7 +107,6 @@ p{
     opacity: 1;
     animation: bounce_b 1s infinite;
 }
-/* ball annimation */
 
 /* container 2 */
 .container2{
@@ -136,11 +119,11 @@ p{
     text-align: center;
     display: block;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: background 0.5s ease;
 }
-.online-image{
-    margin-top: -100px;
-    transition: transform 0.5s ease-in; 
+.container2:hover{
+    animation: bon 3s ease-in infinite;
+    background: rgb(253, 63, 63, 0.8);
 }
 @keyframes bon{
     0% { transform: translateY(0px); }
@@ -149,33 +132,26 @@ p{
     70% { transform: translateY(3px); }
     100% { transform: translateY(0px); }
 }
-.container2:hover{
-    animation: bon 3s ease-in infinite;
-    background: linear-gradient(210deg, #FD3F3F, rgb(253, 63, 63, 0.5));
+.online-image{
+    margin-top: -100px;
+    transition: transform 0.5s ease-in; 
 }
 .container2:hover .online-image{
     transform: scale(1.3);
 }
 .texts{
-    padding: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
     display: flex;
     flex-direction: column;
     position: relative;
-}
-.text1{
-    display: flex;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .online-text{
     display: flex;
     justify-content: start;
     font-family: "Redressed", cursive;
     color: whitesmoke;
-}
-.text2{
-    display: flex;
-    justify-content: center;
 }
 .MODE-online{
     padding-left: 80px;
@@ -193,6 +169,10 @@ p{
     text-align: center;
     display: block;
     cursor: pointer;
+    transition: background 0.5s ease;
+}
+.container3:hover{
+    background: rgb(219, 147, 8, 0.7);
 }
 .turnoi-image{
     margin-left: 50px;
@@ -210,7 +190,6 @@ p{
     justify-content: start;
 }
 .turnoi-text{
-    display: flex;
     font-family: "Redressed", cursive;
     color: white;
 }
@@ -219,9 +198,11 @@ p{
     justify-content: end;
 }
 .MODE-textturnoi{
-    display: flex;
     font-family: "Bebas Neue", sans-serif;
     color: whitesmoke;
+}
+.container3:hover .turnoi-image{
+    animation: move_turnoi 3s ease-in-out infinite;
 }
 @keyframes move_turnoi{
     0% { transform: translateY(0px); }
@@ -229,7 +210,4 @@ p{
     50% { transform: translateY(5px); }
     70% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
-}
-.container3:hover .turnoi-image{
-    animation: move_turnoi 3s ease-in-out infinite;
 }
