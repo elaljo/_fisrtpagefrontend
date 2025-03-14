@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(90deg, #18A5E0, #86b7ca);
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main{
+    width: 1900px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-row{
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-dashboard-text{
+    font-size: 60px;
+    font-family: "Poetsen One", sans-serif;
+}
+.Greeting-text{
+    font-size: 40px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.all-button button{
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 30px;
+    background: #90bfd14f;
+    font-family: "Poetsen One", sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    cursor: pointer;
+}
+.stats-button button{
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 30px;
+    background: #90bfd14f;
+    font-family: "Poetsen One", sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    cursor: pointer;
+}
+.history-button button{
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 30px;
+    background: #90bfd14f;
+    font-family: "Poetsen One", sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    cursor: pointer;
+}
